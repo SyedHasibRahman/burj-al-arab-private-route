@@ -1,30 +1,27 @@
-import React, { useContext } from 'react';
-import { useForm } from 'react-hook-form';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css';
 
-
-const Login = () => {
-
+const Register = () => {
     return (
-
         <div className="login-form">
-
             <div>
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <form>
                     <input type="email" name="" id="" placeholder="Email" />
                     <br />
                     <input type="password" name="" id="" placeholder="Password" />
                     <br />
+                    <input type="password" name="" id="" placeholder="ReEnter Password" />
+                    <br />
                     <input type="submit" value="Submit" />
                 </form>
-                <p>New to Buj Al Arab? <Link to="/register">Create a Coount</Link></p>
+                <p>Already have an account <Link to="register">Login</Link></p>
                 <h4>---------------or -----------------</h4>
                 <button>Google Sign In</button>
             </div>
-        </div>
+
+        </div >
     );
 };
 
-export default Login;
+export default Register;
